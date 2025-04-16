@@ -59,17 +59,17 @@ const HeroRight = () => {
   }, []);
   
   return (
-    <div className="relative w-full h-full flex items-center justify-center px-4 mb-24 ">
+    <div className="relative w-full h-full flex items-center justify-center px-4  ">
       <div ref={projectsRef}  className="relative w-full max-w-md h-full flex flex-col items-center justify-center">
         {/* First Project */}
-        <div className="project-item absolute top-1/4 left-1/4 w-48 h-48 lg:w-96 lg:h-96 rounded-lg shadow-lg overflow-hidden">
+        <div className="project-item absolute top-1/4 left-1/4 w-60 h-60 lg:w-96 lg:h-96 md:w-96 md:h-96 rounded-lg shadow-lg overflow-hidden">
           <img src="/images/project1.png" alt="Project 1" className="w-full h-full object-contain" />
           <div className="absolute inset-0  transition-all flex items-center justify-center">
           </div>
         </div>
         
         {/* Second Project */}
-        <div className="project-item absolute bottom-1/4 right-1/4 w-48 h-48 lg:w-96 lg:h-96 rounded-lg shadow-lg overflow-hidden">
+        <div className="project-item absolute bottom-1/4 right-1/4 w-60 h-60 lg:w-96 lg:h-96 md:w-96 md:h-96 rounded-lg shadow-lg overflow-hidden">
           <img src="/images/project2.png" alt="Project 2" className="w-full h-full object-contain" />
           <div className="absolute inset-0  transition-all flex items-center justify-center">
           </div>
@@ -123,7 +123,7 @@ const Hero = () => {
 
     return (
         <section id='hero' className='relative overflow-hidden'>
-            <div className='hero-layout grid md:grid-cols-2 grid-cols-1'>
+            <div className='hero-layout grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1'>
                 {/* Left: Hero Content*/}
                 <header className='flex flex-col justify-center md:w-full w-screen md:px-20 px-5'>
                     <div className='flex flex-col gap-7'>
@@ -166,7 +166,7 @@ const Hero = () => {
                 </header>
                 
                 {/* Right: Visual Element with Two Projects */}
-                <figure className="h-full md:h-[90%] min-h-[400px] flex items-center justify-center">
+                <figure className="h-[90%] md:h-[90%] min-h-[400px] flex items-center justify-center">
                     <HeroRight />
                 </figure>
             </div>
